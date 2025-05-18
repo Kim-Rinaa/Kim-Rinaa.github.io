@@ -8,7 +8,7 @@ interface HeroProps {
 const Hero = ({ language }: HeroProps) => {
   const content = {
     ko: {
-      headline: "One-Stop Chemical Safety & Compliance Platform1",
+      headline: "One-Stop Chemical Safety & Compliance Platform",
       subText: "From procurement to disposal, we digitize every stage of chemical management so you can focus on innovation.",
       ctaText: "무료 컴플라이언스 점검 받기",
       slogan: "안전하고 효율적인 화학물질 관리의 선도주자"
