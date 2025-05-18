@@ -1,0 +1,64 @@
+# GitHub Actions 워크플로우 이름
+name: Deploy to GitHub Pages
+
+# 워크플로우가 실행될 조건: main 브랜치에 push 이벤트가 발생했을 때
+on:
+  push:
+    branches:
+      - main # 배포할 브랜치를 main으로 설정
+  # 수동으로 워크플로우를 실행할 수 있도록 workflow_dispatch 추가
+  workflow_dispatch:
+
+# GitHub Pages에 배포하기 위한 권한 설정
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 동시성 설정: 동일한 그룹에 대해 하나의 작업만 실행되도록 보장
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# 실행될 작업들 정의
+jobs:
+  build:
+    runs-on: ubuntu-latest # 작업 실행 환경 (최신 Ubuntu)
+    steps:
+      - name: Checkout repository # 1. 코드 체크아웃
+        uses: actions/checkout@v4 # GitHub의 checkout 액션 사용
+
+      - name: Set up Node.js # 2. Node.js 환경 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18" # 사용할 Node.js 버전 (프로젝트에 맞게 조절 가능)
+          cache: "npm" # npm 의존성 캐싱 활성화
+
+      - name: Install dependencies # 3. 의존성 설치
+        run: npm ci # package-lock.json을 사용하여 정확한 버전 설치
+
+      - name: Build project # 4. 프로젝트 빌드
+        run: npm run build # package.json의 build 스크립트 실행
+        # Kim-Rinaa.github.io 와 같이 <username>.github.io 형태의 저장소는 base가 '/'가 기본.
+        # 만약 <username>.github.io/<repository-name> 형태라면 아래와 같이 base 설정 필요
+        # env:
+        #   VITE_BASE_PATH: /${{ github.event.repository.name }}/
+
+      - name: Setup Pages # 5. GitHub Pages 설정
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact # 6. 빌드 결과물(artifact) 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./dist" # Vite의 기본 빌드 출력 폴더
+
+  deploy:
+    needs: build # 'build' 작업이 성공적으로 완료된 후 실행
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # 배포된 페이지 URL 출력
+    steps:
+      - name: Deploy to GitHub Pages # 7. GitHub Pages에 배포
+        id: deployment
+        uses: actions/deploy-pages@v4 # GitHub의 deploy-pages 액션 사용
