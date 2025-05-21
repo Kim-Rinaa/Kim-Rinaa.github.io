@@ -3,6 +3,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import MyHeroImage from '../assets/Back.png';
 
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
@@ -23,7 +24,7 @@ const HeroSection: React.FC = () => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')",
+          backgroundImage: `url(${MyHeroImage})`,
           filter: "brightness(0.5)"
         }}
       />

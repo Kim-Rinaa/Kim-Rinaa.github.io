@@ -2,7 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage, Language } from '../contexts/LanguageContext';
 import { Globe } from 'lucide-react';
-import { 
+
+import MyCompanyLogo from '../assets/logo.png';
+
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -42,8 +45,9 @@ const NavBar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#home" className="flex items-center">
-          <span className="text-2xl font-bold text-ihub-dark">
+        <a href="#home" className="flex items-center space-x-2">
+          <img src={ MyCompanyLogo } alt="우리 회사 로고" className="h-8" />  
+          <span className="text-xl font-bold text-ihub-dark">
             <span className="text-ihub-gold">IHUB</span>GLOBAL
           </span>
         </a>
