@@ -39,7 +39,8 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+node_modules
+node_modules/.cache/gh-pages/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -86,7 +87,7 @@ out
 
 # Nuxt.js build outputs
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
@@ -109,7 +110,7 @@ build/
 public/build/
 
 # Vite build output
-dist # <--- Vite 빌드 결과 폴더도 제외 (GitHub Pages 배포 시에는 별도로 관리)
+# dist 
 dist-ssr
 *.local
 
@@ -133,5 +134,3 @@ dist-ssr
 # macOS
 .DS_Store
 ._*
-
-node_modules/.cache/gh-pages/
