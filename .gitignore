@@ -39,7 +39,7 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/ # <--- 이 줄이 매우 중요합니다!
+node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -133,3 +133,5 @@ dist-ssr
 # macOS
 .DS_Store
 ._*
+
+node_modules/.cache/gh-pages/
