@@ -76,7 +76,12 @@ const StrengthsSection: React.FC = () => {
                 {strength.icon}
               </div>
               <h3 className="text-xl font-bold mb-2">{strength.title}</h3>
-              <p className="text-gray-600">{strength.description}</p>
+              <p 
+                className="text-gray-600"
+                style={{ whiteSpace: 'pre-wrap' }} 
+              >
+                {strength.description}
+              </p>
             </div>
           ))}
         </div>

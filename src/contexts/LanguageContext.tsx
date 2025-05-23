@@ -35,6 +35,7 @@ const translations = {
     'about.value3.desc': '국내외 화학물질 규제 전문지식 보유 및 관리',
     
     // Services
+    'services.title': 'Solution',
     'services.storage': '보관 인프라',
     'services.transport': '통합 컨설팅',
     'services.inventory': '스마트 물류시스템',
@@ -46,15 +47,19 @@ const translations = {
     'services.emergency.desc': `24시간 감시와 법규 기반 운영으로 생명과 환경까지 고려한 안전 기준 제공`, 
     
     // Strengths
-    'strengths.title': '핵심 강점',
-    'strengths.cert': '국제 인증',
-    'strengths.monitoring': '24/7 모니터링',
-    'strengths.safety': '99.9% 안전 기록',
-    'strengths.global': '글로벌 네트워크',
-    'strengths.cert.desc': 'ISO 9001, ISO 14001, OHSAS 18001 인증',
-    'strengths.monitoring.desc': '화학물질 상태 실시간 원격 모니터링',
-    'strengths.safety.desc': '10년 연속 무사고 안전 기록 달성',
-    'strengths.global.desc': '전 세계 30개국 파트너십 네트워크',
+    'strengths.title': 'Management',
+    'strengths.cert': '설계된 보관',
+    'strengths.monitoring': '맞춤형 해결',
+    'strengths.safety': '9정밀한 추적',
+    'strengths.global': '예방 중심 운영',
+    'strengths.cert.desc': `화학물질의 특성과 기준에 맞춰 보관 
+     환경을 사전 설계`,
+    'strengths.monitoring.desc': `고객의 상황과 니즈를 분석해
+     실질적인 해법을 제시`,
+    'strengths.safety.desc': `재고부터 출고 이력까지 실시간으로 
+     추적·관리`,
+    'strengths.global.desc': `24시간 감시 체계와 사고 방지 프로세스로 
+     위험 요소를 선제적으로 대응`,
     
     // Contact
     'contact.title': '문의하기',
