@@ -61,7 +61,7 @@ const translations = {
     'strengths.title': 'Management',
     'strengths.cert': '설계된 보관',
     'strengths.monitoring': '맞춤형 해결',
-    'strengths.safety': '9정밀한 추적',
+    'strengths.safety': '정밀한 추적',
     'strengths.global': '예방 중심 운영',
     'strengths.cert.desc': `화학물질의 특성과 기준에 맞춰 보관 
      환경을 사전 설계`,
