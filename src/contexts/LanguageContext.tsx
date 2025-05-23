@@ -21,7 +21,7 @@ const translations = {
     'nav.contact': '문의',
     
     // Hero
-    'hero.slogan': '화학물류의 글로벌 스탠다드',
+    'hero.slogan': '안전하고 효율적인 화학물질 관리의 선두주자',
     'hero.cta': '자세히 보기',
     
     // About
