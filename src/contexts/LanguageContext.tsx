@@ -131,9 +131,9 @@ const translations = {
     'contact.form.email': 'Email',
     'contact.form.message': 'Message',
     'contact.form.submit': 'Submit',
-    'contact.address.value': '4F, 123 Teheran-ro, Gangnam-gu, Seoul, South Korea',
-    'contact.phone.value': '+82-2-123-4567',
-    'contact.email.value': 'info@ihubglobal.com',
+    'contact.address.value': '170-6, Sinbong-ri, Yeongin-myeon, Asan-si, Chungcheongnam-do',
+    'contact.phone.value': '+82-01-3397-9023',
+    'contact.email.value': 'hs.lee@ihubglobal.co.kr',
     
     // Footer
     'footer.copyright': '© 2023 IHUBGLOBAL. All rights reserved.',
@@ -195,9 +195,9 @@ const translations = {
     'contact.form.email': 'メールアドレス',
     'contact.form.message': 'メッセージ',
     'contact.form.submit': '送信',
-    'contact.address.value': 'ソウル特別市江南区テヘラン路123、4階',
-    'contact.phone.value': '+82-2-123-4567',
-    'contact.email.value': 'info@ihubglobal.com',
+    'contact.address.value': '忠清南道牙山市霊仁面新峰里170-6',
+    'contact.phone.value': '+82-01-3397-9023',
+    'contact.email.value': 'hs.lee@ihubglobal.co.kr',
     
     // Footer
     'footer.copyright': '© 2023 IHUBGLOBAL. 全著作権所有。',
