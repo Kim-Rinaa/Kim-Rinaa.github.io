@@ -26,14 +26,25 @@ const translations = {
     
     // About
     'about.title': 'IHUBGLOBAL 소개',
-    'about.description': 'IHUBGLOBAL은 화학물질 전문 물류 기업으로서 20여 년간 축적된 경험과 노하우ㄱㄷ퍄퍄를 바탕으로 고객에게 최상의 물류 서비스를 제공합니다. 국내외 화학물질 규제에 대한 깊은 이해와 안전 중심의 철학으로 글로벌 화학 산업의 발전에 기여하고 있습니다.',
-    'about.value1': '안전 관리',
-    'about.value2': '스마트 물류',
-    'about.value3': '규제 준수',
-    'about.value1.desc': '엄격한 품질관리와 안전기준 준수로 무사고 실현',
-    'about.value2.desc': 'IoT 기반 실시간 모니터링 및 첨단 물류 시스템',
-    'about.value3.desc': '국내외 화학물질 규제 전문지식 보유 및 관리',
-    
+    'about.tagline': '스마일을 담은 연결, 세상을 잇다.',
+    'about.mainDescription': `IHUBGLOBAL의 로고는 단순한 심볼이 아닙니다.
+     그 안에는 우리의 철학과 비전이 담겨 있습니다.
+     ‘i’는 사람을, ‘H’는 허브(Hub)를,
+     그 둘을 잇는 곡선은 스마일을 의미합니다.
+
+     사람 중심의 서비스
+     안전하고 효율적인 물류 시스템
+     책임 있는 운영으로 이어지는 신뢰
+
+     우리는 이 모든 가치를
+     하나의 스마일로 담아냅니다.
+
+     IHUBGLOBAL의 노란색은
+     ‘준비된 안전’, ‘관리되는 리스크’의 색입니다.
+
+     IHUBGLOBAL은 단순한 물류 기업을 넘어,
+     비즈니스, 정보, 시스템을 스마트하게 이어주는'허브'입니다..`,
+
     // Services
     'services.title': 'Solution',
     'services.storage': '보관 인프라',
