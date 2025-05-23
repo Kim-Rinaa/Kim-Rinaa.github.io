@@ -26,7 +26,7 @@ const translations = {
     
     // About
     'about.title': 'IHUBGLOBAL 소개',
-    'about.description': 'IHUBGLOBAL은 화학물질 전문 물류 기업으로서 20여 년간 축적된 경험과 노하우를 바탕으로 고객에게 최상의 물류 서비스를 제공합니다. 국내외 화학물질 규제에 대한 깊은 이해와 안전 중심의 철학으로 글로벌 화학 산업의 발전에 기여하고 있습니다.',
+    'about.description': 'IHUBGLOBAL은 화학물질 전문 물류 기업으로서 20여 년간 축적된 경험과 노하우ㄱㄷ퍄퍄를 바탕으로 고객에게 최상의 물류 서비스를 제공합니다. 국내외 화학물질 규제에 대한 깊은 이해와 안전 중심의 철학으로 글로벌 화학 산업의 발전에 기여하고 있습니다.',
     'about.value1': '안전 관리',
     'about.value2': '스마트 물류',
     'about.value3': '규제 준수',
