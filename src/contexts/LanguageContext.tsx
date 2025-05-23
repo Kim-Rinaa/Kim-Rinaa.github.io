@@ -35,16 +35,15 @@ const translations = {
     'about.value3.desc': '국내외 화학물질 규제 전문지식 보유 및 관리',
     
     // Services
-    'services.title': '서비스',
     'services.storage': '보관 인프라',
     'services.transport': '통합 컨설팅',
     'services.inventory': '스마트 물류시스템',
     'services.emergency': '위험 대응 통합 프로토콜',
     'services.storage.desc': `전용 창고와 피해 저감 설비를 갖춘
-시설·운영 통합형 안전 보관`,
-    'services.transport.desc': '입고부터 보고서 작성까지 대응하는 맞춤형 화학물류 컨설팅',
-    'services.inventory.desc': '자체 개발 WMS 기반 화학물질 KPI까지 관리하는 데이터 기반 물류 운영',
-    'services.emergency.desc': '24시간 감시와 법규 기반 운영으로 생명과 환경까지 고려한 안전 기준 제공',
+     시설·운영 통합형 안전 보관`, 
+    'services.transport.desc': `입고부터 보고서 작성까지 대응하는 맞춤형 화학물류 컨설팅`, 
+    'services.inventory.desc': `자체 개발 WMS 기반 화학물질 KPI까지 관리하는 데이터 기반 물류 운영`, 
+    'services.emergency.desc': `24시간 감시와 법규 기반 운영으로 생명과 환경까지 고려한 안전 기준 제공`, 
     
     // Strengths
     'strengths.title': '핵심 강점',
