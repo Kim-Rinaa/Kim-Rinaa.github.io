@@ -23,8 +23,24 @@ const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+   
+    const recipientEmail = 'hs.lee@ihubglobal.co.kr';
+    const subject = encodeURIComponent(`[문의하기] ${formData.name}님의 문의입니다.`);
+    const body = encodeURIComponent(
+      `안녕하세요, IHUBGLOBAL 입니다.\n\n문의주신 내용은 다음과 같습니다.\n\n` +
+      `-------------------------------------\n` +
+      `이름: ${formData.name}\n` +
+      `이메일: ${formData.email}\n` +
+      `-------------------------------------\n\n` +
+      `메시지 내용:\n${formData.message}\n\n` +
+      `-------------------------------------\n\n` +
+      `빠른 시일 내에 답변드리겠습니다.\n감사합니다.`
+    );
     
+     const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
+      
     // Show success toast
     toast({
       title: "Message Sent",
