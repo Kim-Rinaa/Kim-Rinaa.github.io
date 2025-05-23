@@ -40,7 +40,7 @@ const ContactSection: React.FC = () => {
      const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
 
       window.location.href = mailtoLink;
-      
+
     // Show success toast
     toast({
       title: "Message Sent",
@@ -124,7 +124,7 @@ const ContactSection: React.FC = () => {
             {/* Map */}
             <div className="mb-8 h-64 bg-gray-300 rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.359987664725!2d127.02631231530974!3d37.49942413561771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca157b757b7c5%3A0x168510caec8d91c9!2s123%20Teheran-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1621234567890!5m2!1sen!2skr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.670157566493!2d127.00842575747801!3d36.89823828772672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b216d16c1425f%3A0xd91d6b5059cfaff2!2z7Lap7LKt64Ko64-EIOyVhOyCsOyLnCDsmIHsnbjrqbQg7Iug67SJ66asIDE3MC02!5e0!3m2!1sko!2skr!4v1747981196082!5m2!1sko!2skr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

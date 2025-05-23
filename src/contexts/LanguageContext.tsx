@@ -85,7 +85,7 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.slogan': 'Global Standard in Chemical Logistics',
+    'hero.slogan': 'GLeader in Safe and Efficient Chemical Management',
     'hero.cta': 'Learn More',
     
     // About
@@ -149,7 +149,7 @@ const translations = {
     'nav.contact': 'お問い合わせ',
     
     // Hero
-    'hero.slogan': '化学物流のグローバルスタンダード',
+    'hero.slogan': '安全で効率的な化学物質管理の先駆者',
     'hero.cta': '詳細を見る',
     
     // About
