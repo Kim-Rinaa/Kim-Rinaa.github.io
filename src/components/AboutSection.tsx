@@ -36,13 +36,13 @@ const AboutSection: React.FC = () => {
           
           <div className="lg:w-1/2 flex flex-col justify-center text-black text-center lg:text-left reveal opacity-0 transition-opacity duration-1000">
 
-            <div className="flex flex-col lg:flex-row items-center lg:items-end mb-6 lg:mb-8">
+            <div className="flex flex-col lg:flex-row items-center lg:items-center mb-6 lg:mb-8">
               <img 
                 src="/images/ihub-main-logo.png" 
                 alt="IHUBGLOBAL Logo" 
-                className="w-24 h-auto md:w-32 lg:w-40 mr-0 lg:mr-4 mb-2 lg:mb-4" 
-               />
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+               className="w-36 h-auto md:w-44 lg:w-[220px] mr-0 lg:mr-4 mb-2 lg:mb-0"
+              />
+              <h1 className="text-white text-3xl md:text-4xl lg:text-4xl font-semibold">
                 IHUBGLOBAL
               </h1>
             </div>
