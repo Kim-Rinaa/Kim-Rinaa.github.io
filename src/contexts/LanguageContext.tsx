@@ -25,7 +25,7 @@ const translations = {
     'hero.cta': '자세히 보기',
     
     // About
-    'about.title': 'IHUBGLOBAL 소개',
+    'about.title': 'IHUBGLOBAL',
     'about.tagline': '스마일을 담은 연결, 세상을 잇다.',
     'about.mainDescription':`IHUBGLOBAL의 로고는 단순한 심볼이 아닙니다.
 그 안에는 우리의 철학과 비전이 담겨 있습니다.
