@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
     >
       {/* Background Image */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed" 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: `url(${MyHeroImage})`,
           filter: "brightness(0.5)"
