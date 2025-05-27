@@ -191,12 +191,12 @@ it is a 'hub' that smartly connects businesses, information, and systems.`,
     
     // Hero
     'hero.slogan': '安全で効率的な化学物質管理の先駆者', 
-    'hero.cta': '詳細を見る',
+    'hero.cta': 'About us',
     
     // About
     'about.title': 'IHUBGLOBAL', 
     'about.tagline': '笑顔でつなぐ、世界を結ぶ。',
-    'about.mainDescription': `IHUBGLOBALのロゴは 단순한 シンボルではありません。
+    'about.mainDescription': `IHUBGLOBALのロゴは、単なるシンボルではありません。
 そこには私たちの哲学とビジョンが込められています。
 「i」は人を、「H」はハブ(Hub)を、
 その二つを結ぶ曲線は笑顔を意味します。
@@ -265,5 +265,32 @@ IHUBGLOBALは単なる物流企業を超え、
   },
 };
 
-export const useLanguage = () => { 
+
+// LanguageProvider 앞에 'export' 키워드를 추가합니다.
+export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const [language, setLanguage] = useState<Language>('ko');
+
+  const t = (key: string): string => {
+    const langTranslations = translations[language];
+    // 키가 현재 언어 번역 객체에 존재하는지 확인하고, 존재하면 해당 값을 반환합니다.
+    // 존재하지 않으면 키 자체를 반환하여 어떤 키가 누락되었는지 쉽게 알 수 있도록 합니다.
+    return langTranslations && langTranslations.hasOwnProperty(key) 
+      ? langTranslations[key as keyof typeof langTranslations] 
+      : key;
+  };
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
+
+// useLanguage 함수는 이미 export 되어 있습니다.
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (!context) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
 };
