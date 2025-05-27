@@ -259,8 +259,11 @@ IHUBGLOBALは単なる物流企業を超え、
     'toast.mailto.description': 'メールソフトを確認し、お問い合わせ内容を送信してください。',
     
     // Footer
-    'footer.copyright': '© 2025 IHUBGLOBAL. All rights reserved.',
+    'footer.copyright': '© 2025 IHUBGLOBAL. All rights reserved.', 
     'footer.privacy': 'プライバシーポリシー',
     'footer.terms': '利用規約',
   },
+};
+
+export const useLanguage = () => { 
 };
