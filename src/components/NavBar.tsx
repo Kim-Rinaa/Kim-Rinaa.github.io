@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage, Language } from '../contexts/LanguageContext';
 import { Globe } from 'lucide-react';
 
-import MyCompanyLogo from '../assets/logo-black.png';
+import MyCompanyLogo from '../assets/logo.png';
 
 import {
   DropdownMenu,
