@@ -16,13 +16,13 @@ const translations = {
     // Navigation
     'nav.home': '홈',
     'nav.about': '회사소개',
-    'nav.services': '서비스',
-    'nav.strengths': '강점',
+    'nav.services': '솔루션',
+    'nav.strengths': '영업관리',
     'nav.contact': '문의',
     
     // Hero
     'hero.slogan': '안전하고 효율적인 화학물질 관리의 선두주자',
-    'hero.cta': '자세히 보기',
+    'hero.cta': 'About us',
     
     // About
     'about.title': 'IHUBGLOBAL',
@@ -86,55 +86,76 @@ IHUBGLOBAL은 단순한 물류 기업을 넘어,
     'contact.address.value': '충청남도 아산시 영인면 신봉리 170-6',
     'contact.phone.value': '+82-10-3397-9023',
     'contact.email.value': 'hs.lee@ihubglobal.co.kr',
+    'toast.mailto.title': '메일 작성창이 열렸습니다',
+    'toast.mailto.description': '메일 프로그램을 확인하고 문의 내용을 전송해주세요.',
     
     // Footer
     'footer.copyright': '© 2025 IHUBGLOBAL. All rights reserved.',
     'footer.privacy': '개인정보처리방침',
     'footer.terms': '이용약관',
   },
+  
   en: {
     // Navigation
     'nav.home': 'Home',
     'nav.about': 'About',
-    'nav.services': 'Services',
-    'nav.strengths': 'Strengths',
+    'nav.services': 'Solution',
+    'nav.strengths': 'Management',
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.slogan': 'GLeader in Safe and Efficient Chemical Management',
-    'hero.cta': 'Learn More',
+    'hero.slogan': 'Leader in Safe and Efficient Chemical Management',
+    'hero.cta': 'About us',
     
     // About
-    'about.title': 'About IHUBGLOBAL',
-    'about.description': 'IHUBGLOBAL is a specialized chemical logistics company with over 20 years of accumulated experience, providing clients with premium logistics services. With deep understanding of domestic and international chemical regulations and a safety-centered philosophy, we contribute to the development of the global chemical industry.',
-    'about.value1': 'Safety Management',
-    'about.value2': 'Smart Logistics',
-    'about.value3': 'Regulatory Compliance',
-    'about.value1.desc': 'Achieving zero incidents through strict quality control and safety standards',
-    'about.value2.desc': 'IoT-based real-time monitoring and advanced logistics systems',
-    'about.value3.desc': 'Expertise in domestic and international chemical regulations',
+    'about.title': 'IHUBGLOBAL',
+    'about.tagline': 'Connecting with a Smile, Bridging the World.',
+    'about.mainDescription': `IHUBGLOBAL's logo is not just a simple symbol.
+It embodies our philosophy and vision.
+'i' represents people, 'H' represents Hub,
+and the curve connecting the two signifies a smile.
+     
+People-centric service
+Safe and efficient logistics system
+Trust built on responsible operations
+     
+We encapsulate all these values
+into a single smile.
+     
+IHUBGLOBAL's yellow
+is the color of 'prepared safety' and 'managed risk'.
+     
+IHUBGLOBAL is more than just a logistics company;
+it is a 'hub' that smartly connects businesses, information, and systems.`,
+
+
     
     // Services
-    'services.title': 'Services',
-    'services.storage': 'Chemical Storage',
-    'services.transport': 'Temperature-Controlled Transport',
-    'services.inventory': 'Hazardous Material Inventory Systems',
-    'services.emergency': 'Emergency Response Protocols',
-    'services.storage.desc': 'Safe chemical storage in hazardous material certified facilities',
-    'services.transport.desc': 'Secure transportation through specialized vehicles with temperature and environmental controls',
-    'services.inventory.desc': 'Implementation of real-time inventory tracking and chemical management systems',
-    'services.emergency.desc': '24-hour emergency response and crisis management protocols',
+    'services.title': 'Solution',
+    'services.storage': 'Storage Infrastructure',
+    'services.transport': 'Integrated Consulting',
+    'services.inventory': 'Smart Logistics System',
+    'services.emergency': 'Integrated Risk Response Protocol',
+    'services.storage.desc': `Facility-operation integrated safe storage
+     with dedicated warehouses and damage mitigation facilities`, 
+    'services.transport.desc': `Customized chemical logistics consulting対応from receiving to report generation`, 
+    'services.inventory.desc': `Data-driven logistics operation managing up to chemical KPIs based on proprietary WMS`, 
+    'services.emergency.desc': `Providing safety standards considering life and environment through 24-hour monitoring and regulation-based operation`, 
     
     // Strengths
-    'strengths.title': 'Core Strengths',
-    'strengths.cert': 'International Certifications',
-    'strengths.monitoring': '24/7 Monitoring',
-    'strengths.safety': '99.9% Safety Record',
-    'strengths.global': 'Global Network',
-    'strengths.cert.desc': 'ISO 9001, ISO 14001, OHSAS 18001 certified',
-    'strengths.monitoring.desc': 'Real-time remote monitoring of chemical conditions',
-    'strengths.safety.desc': '10 consecutive years of incident-free safety record',
-    'strengths.global.desc': 'Partnership network across 30 countries worldwide',
+    'strengths.title': 'Management',
+    'strengths.cert': 'Designed Storage',
+    'strengths.monitoring': 'Customized Solutions',
+    'strengths.safety': 'Precise Tracking',
+    'strengths.global': 'Preventive Operations',
+    'strengths.cert.desc': `Pre-designing storage environments
+     according to chemical properties and standards`,
+    'strengths.monitoring.desc': `Analyzing customer situations and needs
+     to provide practical solutions`,
+    'strengths.safety.desc': `Real-time tracking and management
+     from inventory to shipping history`,
+    'strengths.global.desc': `Proactively responding to risk factors
+     with a 24-hour monitoring system and accident prevention processes`,
     
     // Contact
     'contact.title': 'Contact Us',
@@ -143,62 +164,82 @@ IHUBGLOBAL은 단순한 물류 기업을 넘어,
     'contact.email': 'Email',
     'contact.hours': 'Business Hours',
     'contact.hours.value': 'Mon-Fri: 09:00 - 18:00',
-    'contact.form.name': 'Name',
+    'contact.form.name': 'Contact Person', 
     'contact.form.email': 'Email',
     'contact.form.message': 'Message',
-    'contact.form.submit': 'Submit',
-    'contact.address.value': '170-6, Sinbong-ri, Yeongin-myeon, Asan-si, Chungcheongnam-do',
-    'contact.phone.value': '+82-01-3397-9023',
+    'contact.form.submit': 'Send Inquiry',
+    'contact.address.value': '170-6, Sinbong-ri, Yeongin-myeon, Asan-si, Chungcheongnam-do, South Korea',
+    'contact.phone.value': '+82-10-3397-9023',
     'contact.email.value': 'hs.lee@ihubglobal.co.kr',
+    'toast.mailto.title': 'Mail Client Opened',
+    'toast.mailto.description': 'Please check your mail client to send the inquiry.',
     
     // Footer
-    'footer.copyright': '© 2023 IHUBGLOBAL. All rights reserved.',
+    'footer.copyright': '© 2025 IHUBGLOBAL. All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
   },
+
+
   jp: {
-    // Navigation
+      // Navigation
     'nav.home': 'ホーム',
-    'nav.about': '会社紹介',
-    'nav.services': 'サービス',
-    'nav.strengths': '強み',
+    'nav.about': '会社概要', 
+    'nav.services': 'ソリューション', 
+    'nav.strengths': 'マネジメント', 
     'nav.contact': 'お問い合わせ',
     
     // Hero
-    'hero.slogan': '安全で効率的な化学物質管理の先駆者',
+    'hero.slogan': '安全で効率的な化学物質管理の先駆者', 
     'hero.cta': '詳細を見る',
     
     // About
-    'about.title': 'IHUBGLOBALについて',
-    'about.description': 'IHUBGLOBALは20年以上の実績を持つ化学物質専門の物流企業として、お客様に最高の物流サービスを提供しています。国内外の化学物質規制に関する深い理解と安全中心の哲学で、グローバル化学産業の発展に貢献しています。',
-    'about.value1': '安全管理',
-    'about.value2': 'スマート物流',
-    'about.value3': '規制遵守',
-    'about.value1.desc': '厳格な品質管理と安全基準の遵守により無事故を実現',
-    'about.value2.desc': 'IoTベースのリアルタイムモニタリングと先端物流システム',
-    'about.value3.desc': '国内外の化学物質規制の専門知識保有および管理',
-    
+    'about.title': 'IHUBGLOBAL', 
+    'about.tagline': '笑顔でつなぐ、世界を結ぶ。',
+    'about.mainDescription': `IHUBGLOBALのロゴは 단순한 シンボルではありません。
+そこには私たちの哲学とビジョンが込められています。
+「i」は人を、「H」はハブ(Hub)を、
+その二つを結ぶ曲線は笑顔を意味します。
+     
+人中心のサービス
+安全で効率的な物流システム
+責任ある運営で築く信頼
+     
+私たちはこれら全ての価値を
+一つの笑顔に込めています。
+     
+IHUBGLOBALの黄色は
+「準備された安全」、「管理されるリスク」の色です。
+     
+IHUBGLOBALは単なる物流企業を超え、
+ビジネス、情報、システムをスマートにつなぐ「ハブ」です。`,
+
     // Services
-    'services.title': 'サービス',
-    'services.storage': '化学物質保管',
-    'services.transport': '温度制御輸送',
-    'services.inventory': '危険物在庫システム',
-    'services.emergency': '緊急対応プロトコル',
-    'services.storage.desc': '危険物取扱認証施設での安全な化学物質保管',
-    'services.transport.desc': '温度および環境制御が可能な特殊車両による安全輸送',
-    'services.inventory.desc': 'リアルタイム在庫追跡および化学物質管理システムの構築',
-    'services.emergency.desc': '24時間緊急事態対応および危機管理プロトコル',
+    'services.title': 'ソリューション',
+    'services.storage': '保管インフラ',
+    'services.transport': '統合コンサルティング',
+    'services.inventory': 'スマート物流システム',
+    'services.emergency': 'リスク対応統合プロトコル',
+    'services.storage.desc': `専用倉庫と被害軽減設備を備えた
+     施設・運営統合型安全保管`, 
+    'services.transport.desc': `入荷から報告書作成まで対応するオーダーメイド化学物流コンサルティング`, 
+    'services.inventory.desc': `自社開発WMS基盤、化学物質KPIまで管理するデータ基盤物流運営`, 
+    'services.emergency.desc': `24時間監視と法規基盤運営で生命と環境まで考慮した安全基準提供`, 
     
     // Strengths
-    'strengths.title': '核心的な強み',
-    'strengths.cert': '国際認証',
-    'strengths.monitoring': '24時間監視',
-    'strengths.safety': '99.9%安全記録',
-    'strengths.global': 'グローバルネットワーク',
-    'strengths.cert.desc': 'ISO 9001、ISO 14001、OHSAS 18001認証取得',
-    'strengths.monitoring.desc': '化学物質の状態をリアルタイムで遠隔監視',
-    'strengths.safety.desc': '10年連続無事故安全記録達成',
-    'strengths.global.desc': '世界30カ国のパートナーシップネットワーク',
+    'strengths.title': 'マネジメント',
+    'strengths.cert': '設計された保管',
+    'strengths.monitoring': 'オーダーメイド解決策',
+    'strengths.safety': '精密な追跡',
+    'strengths.global': '予防中心運営',
+    'strengths.cert.desc': `化学物質の特性と基準に合わせて保管
+     環境を事前設計`,
+    'strengths.monitoring.desc': `顧客の状況とニーズを分析し
+     実質的な解決策を提示`,
+    'strengths.safety.desc': `在庫から出荷履歴までリアルタイムで
+     追跡・管理`,
+    'strengths.global.desc': `24時間監視体制と事故防止プロセスで
+     危険要素を先制的に対応`,
     
     // Contact
     'contact.title': 'お問い合わせ',
@@ -207,39 +248,19 @@ IHUBGLOBAL은 단순한 물류 기업을 넘어,
     'contact.email': 'メール',
     'contact.hours': '営業時間',
     'contact.hours.value': '月-金: 09:00 - 18:00',
-    'contact.form.name': 'お名前',
+    'contact.form.name': 'ご担当者名', 
     'contact.form.email': 'メールアドレス',
     'contact.form.message': 'メッセージ',
-    'contact.form.submit': '送信',
+    'contact.form.submit': '送信する', 
     'contact.address.value': '忠清南道牙山市霊仁面新峰里170-6',
-    'contact.phone.value': '+82-01-3397-9023',
+    'contact.phone.value': '+82-10-3397-9023',
     'contact.email.value': 'hs.lee@ihubglobal.co.kr',
+    'toast.mailto.title': 'メール作成画面が開きました',
+    'toast.mailto.description': 'メールソフトを確認し、お問い合わせ内容を送信してください。',
     
     // Footer
-    'footer.copyright': '© 2023 IHUBGLOBAL. 全著作権所有。',
+    'footer.copyright': '© 2025 IHUBGLOBAL. All rights reserved.',
     'footer.privacy': 'プライバシーポリシー',
     'footer.terms': '利用規約',
   },
-};
-
-export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('ko');
-
-  const t = (key: string): string => {
-    return translations[language][key as keyof typeof translations[typeof language]] || key;
-  };
-
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
-      {children}
-    </LanguageContext.Provider>
-  );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
 };
