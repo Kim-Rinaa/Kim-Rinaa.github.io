@@ -2,16 +2,20 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import sitemap from 'vite-plugin-sitemap' 
+import path from 'path' // <--- 이 줄이 반드시 있어야 합니다!
 
 export default defineConfig({
   plugins: [
     react(),
     sitemap({ 
       hostname: 'https://www.ihubglobal.co.kr',
-      generateRobotsTxt: false, // <--- 이 옵션을 명시적으로 false로 설정합니다.
-                                // 또는 이 옵션 줄 자체를 삭제해도 기본값이 false일 수 있습니다.
-      // robots: [] // 만약 robots 옵션이 있다면 빈 배열로 설정하거나 주석 처리/삭제합니다.
+      generateRobotsTxt: false, 
     }) 
   ],
   base: '/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'), // <--- 이 설정이 올바른지 확인
+    },
+  },
 })

@@ -1,19 +1,16 @@
+// tsconfig.json
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
   "compilerOptions": {
-    "baseUrl": ".",
+    // ... (다른 compilerOptions 설정들) ...
+
+    "baseUrl": ".", // 또는 "./" 또는 "src" 등 프로젝트 구조에 맞게
+                   // baseUrl이 "." 이면 paths는 "src/*" 형태
+                   // baseUrl이 "src" 이면 paths는 "*": ["*"] 또는 "@/*": ["*"] 형태
     "paths": {
-      "@/*": ["./src/*"]
-    },
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "noUnusedLocals": false,
-    "strictNullChecks": false
-  }
+      "@/*": ["src/*"] // <--- 이 설정이 올바른지 확인
+                       // baseUrl이 "." 일 경우, "src/" 폴더 밑의 모든 것을 "@/"로 접근
+    }
+  },
+  "include": ["src"] // 또는 프로젝트 전체 파일을 포함하도록 설정
+  // ... (references 등 나머지 설정)
 }
