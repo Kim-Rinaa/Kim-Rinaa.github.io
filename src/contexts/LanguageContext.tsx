@@ -52,25 +52,27 @@ IHUBGLOBAL은 단순한 물류 기업을 넘어,
     'services.inventory': '스마트 물류시스템',
     'services.emergency': '위험 대응 통합 프로토콜',
     'services.storage.desc': `전용 창고와 피해 저감 설비를 갖춘
-     시설·운영 통합형 안전 보관`, 
+시설·운영 통합형 안전 보관`, 
     'services.transport.desc': `입고부터 보고서 작성까지 대응하는 맞춤형 화학물류 컨설팅`, 
     'services.inventory.desc': `자체 개발 WMS 기반 화학물질 KPI까지 관리하는 데이터 기반 물류 운영`, 
-    'services.emergency.desc': `24시간 감시와 법규 기반 운영으로 생명과 환경까지 고려한 안전 기준 제공`, 
+    'services.emergency.desc': `24시간 감시와 법규 기반 운영으로
+    생명과 환경까지 고려한 
+안전 기준 제공`, 
     
     // Strengths
     'strengths.title': 'Management',
     'strengths.cert': '설계된 보관',
     'strengths.monitoring': '맞춤형 해결',
     'strengths.safety': '정밀한 추적',
-    'strengths.global': '예방 중심 운영',
-    'strengths.cert.desc': `화학물질의 특성과 기준에 맞춰 보관 
-     환경을 사전 설계`,
+    'strengths.global': `예방 중심 운영`,
+    'strengths.cert.desc': `화학물질의 특성과 기준에 맞춰 
+보관 환경을 사전 설계`,
     'strengths.monitoring.desc': `고객의 상황과 니즈를 분석해
-     실질적인 해법을 제시`,
-    'strengths.safety.desc': `재고부터 출고 이력까지 실시간으로 
-     추적·관리`,
+실질적인 해법을 제시`,
+    'strengths.safety.desc': `재고부터 출고 이력까지
+실시간으로 추적·관리`,
     'strengths.global.desc': `24시간 감시 체계와 사고 방지 프로세스로 
-     위험 요소를 선제적으로 대응`,
+위험 요소를 선제적으로 대응`,
     
     // Contact
     'contact.title': '문의하기',
@@ -135,12 +137,21 @@ it is a 'hub' that smartly connects businesses, information, and systems.`,
     'services.storage': 'Storage Infrastructure',
     'services.transport': 'Integrated Consulting',
     'services.inventory': 'Smart Logistics System',
-    'services.emergency': 'Integrated Risk Response Protocol',
-    'services.storage.desc': `Facility-operation integrated safe storage
-     with dedicated warehouses and damage mitigation facilities`, 
-    'services.transport.desc': `Customized chemical logistics consulting対応from receiving to report generation`, 
-    'services.inventory.desc': `Data-driven logistics operation managing up to chemical KPIs based on proprietary WMS`, 
-    'services.emergency.desc': `Providing safety standards considering life and environment through 24-hour monitoring and regulation-based operation`, 
+    'services.emergency': `Risk Response Protocol`,
+    'services.storage.desc': `Facility-operation integrated 
+safe storage with dedicated 
+warehouses and damage 
+mitigation facilities`, 
+    'services.transport.desc': `Customized chemical logistics 
+ consulting covering everything 
+from receiving to reporting.`, 
+    'services.inventory.desc': `Data-driven logistics operation 
+managing up to chemical KPIs 
+based on proprietary WMS`, 
+    'services.emergency.desc': `Providing safety standards
+considering life and environment
+through 24-hour monitoring and
+regulation-based operation`, 
     
     // Strengths
     'strengths.title': 'Management',
@@ -196,23 +207,22 @@ it is a 'hub' that smartly connects businesses, information, and systems.`,
     // About
     'about.title': 'IHUBGLOBAL', 
     'about.tagline': '笑顔でつなぐ、世界を結ぶ。',
-    'about.mainDescription': `IHUBGLOBALのロゴは、単なるシンボルではありません。
+        'about.mainDescription': `IHUBGLOBALのロゴは、単なるシンボルではありません。
+        
 そこには私たちの哲学とビジョンが込められています。
-「i」は人を、「H」はハブ(Hub)を、
-その二つを結ぶ曲線は笑顔を意味します。
-     
-人中心のサービス
-安全で効率的な物流システム
-責任ある運営で築く信頼
-     
-私たちはこれら全ての価値を
-一つの笑顔に込めています。
-     
-IHUBGLOBALの黄色は
-「準備された安全」、「管理されるリスク」の色です。
-     
+「i」は人を、「H」はハブ(Hub)を、その二つを結ぶ曲線は笑顔を意味します。
+
+人中心のサービス、
+安全で効率的な物流システム、
+そして責任ある運営で築く信頼。
+
+私たちはこれら全ての価値を、一つの笑顔に込めています。
+
+IHUBGLOBALの黄色は「準備された安全」と
+「管理されるリスク」を象徴する色です。
+
 IHUBGLOBALは単なる物流企業を超え、
-ビジネス、情報、システムをスマートにつなぐ「ハブ」です。`,
+ビジネス、情報、システムをスマートにつなぐ「ハブ」としての役割を担います。`,
 
     // Services
     'services.title': 'ソリューション',

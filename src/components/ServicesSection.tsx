@@ -73,8 +73,8 @@ const ServicesSection: React.FC = () => {
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <p 
-                  className="text-gray-600" 
+                  <p 
+                  className="text-gray-600"
                   style={{ whiteSpace: 'pre-wrap' }} 
                 >
                   {service.description}

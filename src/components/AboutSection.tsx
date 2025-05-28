@@ -51,7 +51,10 @@ const AboutSection: React.FC = () => {
               <p className="text-xl md:text-2xl font-semibold mb-6" style={{ whiteSpace: 'pre-wrap' }}>
                 {t('about.tagline')}
               </p>
-              <p className="text-base md:text-lg leading-relaxed" style={{ whiteSpace: 'pre-wrap' }}>
+              <p 
+               className="text-base md:text-lg leading-relaxed" 
+               style={{ whiteSpace: 'pre-wrap', wordBreak: 'keep-all' }}
+               >
                 {t('about.mainDescription')}
               </p>
             </div>
