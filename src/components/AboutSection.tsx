@@ -70,6 +70,18 @@ const AboutSection: React.FC = () => {
               style={{ 
               }}
             >
+              <video 
+                src="/videos/my-slideshow-video.mp4" // 비디오 파일 경로 확인!
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="object-cover w-full h-full"  // 이 클래스가 비디오를 div에 꽉 채우도록 함
+                aria-label="Image slideshow video"
+              >
+                Your browser does not support the video tag.
+              </video>
+              
 
               <div className="w-full h-full flex justify-center items-center text-gray-400">
 
