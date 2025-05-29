@@ -62,11 +62,11 @@ const AboutSection: React.FC = () => {
 
           <div className="lg:w-1/2 mt-10 lg:mt-0 flex-grow flex justify-center items-center relative reveal opacity-0 transition-opacity duration-1000 delay-100">
             <div 
-              className="bg-white rounded-full shadow-lg overflow-hidden 
-                         w-[300px] h-[300px] 
-                         md:w-[400px] md:h-[400px] 
-                         lg:w-[600px] lg:h-[600px]
-                         xl:w-[700px] xl:h-[700px]" 
+              className="bg-white rounded-lg shadow-lg overflow-hidden
+                         w-[250px] h-[150px] 
+                         md:w-[400px] md:h-[250px] 
+                         lg:w-[600px] lg:h-[450px]
+                         xl:w-[700px] xl:h-[550px]" 
               style={{ 
               }}
             >
