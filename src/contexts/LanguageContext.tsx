@@ -111,7 +111,8 @@ IHUBGLOBAL은 단순한 물류 기업을 넘어,
     
     // About
     'about.title': 'IHUBGLOBAL',
-    'about.tagline': 'Connecting with a Smile, Bridging the World.',
+    'about.tagline': `Connecting with a Smile,
+Bridging the World.`,
     'about.mainDescription': `IHUBGLOBAL's logo is not just a simple symbol.
 It embodies our philosophy and vision.
 'i' represents people, 'H' represents Hub,
