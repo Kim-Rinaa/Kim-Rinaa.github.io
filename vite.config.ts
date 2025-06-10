@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import sitemap from 'vite-plugin-sitemap' 
-import path from 'path' // <--- 이 줄이 반드시 있어야 합니다!
+import path from 'path'
 
 export default defineConfig({
   plugins: [
@@ -15,7 +15,7 @@ export default defineConfig({
   base: '/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'), // <--- 이 설정이 올바른지 확인
+      '@': path.resolve(__dirname, './src'), 
     },
   },
 })

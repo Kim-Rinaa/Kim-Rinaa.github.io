@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "composite": true, // 이 설정은 유지합니다.
     "target": "ES2022",
     "lib": ["ES2023"],
     "module": "ESNext",
@@ -10,7 +11,7 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    // "noEmit": true, // <--- 이 줄을 삭제하거나 주석 처리합니다.
 
     /* Linting */
     "strict": true,
