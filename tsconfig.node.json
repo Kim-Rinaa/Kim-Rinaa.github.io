@@ -1,6 +1,7 @@
+// tsconfig.node.json
 {
   "compilerOptions": {
-    "composite": true, // 이 설정은 유지합니다.
+    "composite": true,
     "target": "ES2022",
     "lib": ["ES2023"],
     "module": "ESNext",
@@ -8,10 +9,10 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    // "allowImportingTsExtensions": true, // <--- 이 줄을 삭제하거나 주석 처리합니다.
     "isolatedModules": true,
     "moduleDetection": "force",
-    // "noEmit": true, // <--- 이 줄을 삭제하거나 주석 처리합니다.
+    // "noEmit": true, // 이전 단계에서 삭제 또는 주석 처리함
 
     /* Linting */
     "strict": true,
