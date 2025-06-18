@@ -42,9 +42,14 @@ const AboutSection: React.FC = () => {
                 alt="IHUBGLOBAL Logo" 
                className="w-36 h-auto md:w-44 lg:w-[220px] mr-0 lg:mr-4 mb-2 lg:mb-0"
               />
+              <div className="flex flex-col items-center lg:items-start">
               <h1 className="text-white text-3xl md:text-4xl lg:text-4xl font-semibold">
                 IHUBGLOBAL
               </h1>
+              <p className="text-white text-lg md:text-xl lg:text-xl mt-1">
+                (주)아이허브글로벌
+              </p>
+            </div>
             </div>
 
             <div className="max-w-md mx-auto lg:mx-0"> 
