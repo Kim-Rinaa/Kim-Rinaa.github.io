@@ -51,7 +51,7 @@ const Index: React.FC = () => {
     switch (sectionId) {
       case 'home':
         return {
-          title: 'IHUBGLOBAL - 안전한 화학물류 선두주자',
+          title: 'IHUBGLOBAL - 화학물류 전문기업',
           description: 'IHUBGLOBAL(아이허브글로벌)은 고객 맞춤형 화학물질 보관, 운송, 컨설팅 솔루션을 제공하여 안전하고 효율적인 물류 관리를 지원합니다.'
         };
       case 'about':
