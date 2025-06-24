@@ -51,33 +51,33 @@ const Index: React.FC = () => {
     switch (sectionId) {
       case 'home':
         return {
-          title: 'IHUBGLOBAL - 화학물류 전문기업',
-          description: 'IHUBGLOBAL(아이허브글로벌)은 고객 맞춤형 화학물질 보관, 운송, 컨설팅 솔루션을 제공하여 안전하고 효율적인 물류 관리를 지원합니다.'
+          title: '아이허브글로벌(IHUBGLOBAL)',
+          description: 'IHUBGLOBAL (아이허브글로벌) - 화학물류 전문기업.'
         };
       case 'about':
         return {
-          title: '회사소개 | IHUBGLOBAL (아이허브글로벌) 화학물류',
-          description: '아이허브글로벌(IHUBGLOBAL)의 철학과 비전, 로고 스토리와 핵심 가치를 소개합니다. 신뢰할 수 있는 화학물류 파트너입니다.'
+          title: '아이허브글로벌(IHUBGLOBAL)',
+          description: 'IHUBGLOBAL (아이허브글로벌) - 화학물류 전문기업.'
         };
       case 'services':
         return {
-          title: '솔루션 | IHUBGLOBAL (아이허브글로벌) 맞춤형 화학물류 서비스',
-          description: '전문적인 보관 인프라, 통합 컨설팅, 스마트 물류 시스템, 위험 대응 프로토콜 등 아이허브글로벌(IHUBGLOBAL)의 차별화된 솔루션을 만나보세요.'
+          title: '아이허브글로벌(IHUBGLOBAL)',
+          description: 'IHUBGLOBAL (아이허브글로벌) - 화학물류 전문기업.'
         };
       case 'strengths':
         return {
-          title: '영업관리 및 강점 | IHUBGLOBAL (아이허브글로벌)',
-          description: '설계된 보관, 맞춤형 해결, 정밀한 추적, 예방 중심 운영 등 아이허브글로벌(IHUBGLOBAL)만의 체계적인 영업관리 시스템과 핵심 강점을 소개합니다.'
+          title: '아이허브글로벌(IHUBGLOBAL)',
+          description: 'IHUBGLOBAL (아이허브글로벌) - 화학물류 전문기업.'
         };
       case 'contact':
         return {
-          title: '문의하기 | IHUBGLOBAL (아이허브글로벌) 고객 지원',
-          description: '아이허브글로벌(IHUBGLOBAL)의 화학물류 서비스에 대해 궁금한 점이 있으신가요? 지금 바로 문의하시면 신속하고 전문적인 상담을 받으실 수 있습니다.'
+          title: '아이허브글로벌(IHUBGLOBAL)',
+          description: 'IHUBGLOBAL (아이허브글로벌) - 화학물류 전문기업.'
         };
       default:
         return {
-          title: 'IHUBGLOBAL (아이허브글로벌) - 화학물류 전문기업',
-          description: '글로벌 화학물질 물류를 위한 최상의 솔루션을 제공하는 아이허브글로벌(IHUBGLOBAL)입니다.'
+          title: '아이허브글로벌(IHUBGLOBAL)',
+          description: 'IHUBGLOBAL (아이허브글로벌) - 화학물류 전문기업.'
         };
     }
   };
