@@ -1,14 +1,13 @@
-// src/App.tsx
-import React from 'react'; // React import 추가
+import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index"; // 실제 페이지 내용을 담고 있는 컴포넌트
-import NotFound from "./pages/NotFound";
-import { LanguageProvider } from './contexts/LanguageContext'; // 경로에 맞게 수정
-import { HelmetProvider } from 'react-helmet-async'; // 추가
+import Index from "@/pages/Index";
+import NotFound from "@/pages/NotFound";
+import { LanguageProvider } from '@/contexts/LanguageContext'; 
+import { HelmetProvider } from 'react-helmet-async'; 
 
 const queryClient = new QueryClient();
 

@@ -1,16 +1,16 @@
 // src/pages/Index.tsx (예시 파일명, 실제 파일명에 맞게 수정)
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useLanguage } from '../contexts/LanguageContext'; // 경로에 맞게 수정
+import { useLanguage } from '@/contexts/LanguageContext'; // 경로에 맞게 수정
 
 // 각 섹션 컴포넌트 import
-import NavBar from '../components/NavBar'; // 경로에 맞게 수정
-import HeroSection from '../components/HeroSection';
-import AboutSection from '../components/AboutSection';
-import ServicesSection from '../components/ServicesSection';
-import StrengthsSection from '../components/StrengthsSection';
-import ContactSection from '../components/ContactSection';
-import FooterSection from '../components/FooterSection';
+import NavBar from '@/components/NavBar'; // 경로에 맞게 수정
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import ServicesSection from '@/components/ServicesSection';
+import StrengthsSection from '@/components/StrengthsSection';
+import ContactSection from '@/components/ContactSection';
+import FooterSection from '@/components/FooterSection';
 
 const Index: React.FC = () => {
   const { t, language } = useLanguage(); // t 함수와 현재 언어 가져오기
@@ -84,28 +84,28 @@ const Index: React.FC = () => {
 
   const meta = getPageMeta(currentSection);
 
-  // 구조화된 데이터 (회사 정보)
+  
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "IHUBGLOBAL",
-    "alternateName": "아이허브글로벌", // <--- 한글 회사명 추가!
+    "alternateName": "아이허브글로벌", 
     "url": "https://www.ihubglobal.co.kr",
-    "logo": "https://www.ihubglobal.co.kr/favicon.png", // 실제 로고 이미지 URL로 변경
+    "logo": "https://www.ihubglobal.co.kr/images/ihub-main-logo.png", 
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": t('contact.phone.value'), // LanguageContext에서 가져옴 (정확한 키 확인 필요)
+      "telephone": t('contact.phone.value'), 
       "contactType": "Customer Service",
-      "email": t('contact.email.value'), // LanguageContext에서 가져옴 (정확한 키 확인 필요)
+      "email": t('contact.email.value'), 
       "areaServed": "KR",
       "availableLanguage": ["Korean", "English", "Japanese"]
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": t('contact.address.value'), // LanguageContext에서 가져옴 (정확한 키 확인 필요)
-      // "addressLocality": "아산시", // 필요시 추가
-      // "addressRegion": "충청남도", // 필요시 추가
-      // "postalCode": "실제 우편번호", // 우편번호 추가 권장
+      "streetAddress": t('contact.address.value'), 
+      "addressLocality": "아산시",
+      "addressRegion": "충청남도",
+      "postalCode": "336822",
       "addressCountry": "KR"
     }
   };
@@ -120,9 +120,8 @@ const Index: React.FC = () => {
         <meta property="og:description" content={meta.description} />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        {/* OG/Twitter 이미지는 index.html의 것을 그대로 사용하거나, 여기서도 동적 변경 가능 */}
         <meta property="og:image" content="https://www.ihubglobal.co.kr/images/ihubglobal-og-image.png" />
-        <meta name="twitter:image" content="https://www.ihubglobal.co.kr/images/ihubglobal-twitter-card.png" />
+        <meta name="twitter:image" content="https://www.ihubglobal.co.kr/images/ihubglobal-og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>
