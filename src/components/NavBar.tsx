@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage, Language } from '../contexts/LanguageContext';
 import { Globe } from 'lucide-react';
 
+
+import blogIcon from '../assets/blog-logo.png';
+
 import MyCompanyLogo from '../assets/logo.png';
 
 import {
@@ -116,6 +119,18 @@ const NavBar: React.FC = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+
+           <a
+            href="https://blog.naver.com/ihubglobal"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="아이허브글로벌 네이버 블로그 새창으로 열기"
+            className="flex items-center"
+          >
+            <img src={blogIcon} alt="Naver Blog Icon" className="h-6 w-6 hover:opacity-75 transition-opacity" />
+          </a>
+
+
         </nav>
 
         {/* Mobile Navigation */}
@@ -139,11 +154,22 @@ const NavBar: React.FC = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+
+           <a
+            href="https://blog.naver.com/ihubglobal"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="아이허브글로벌 네이버 블로그 새창으로 열기"
+            className="flex items-center ml-4" // 왼쪽 여백 추가
+          >
+            <img src={blogIcon} alt="Naver Blog Icon" className="h-6 w-6" />
+          </a>
+
           
           {/* Hamburger Menu */}
-          <button 
+           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-ihub-dark focus:outline-none"
+            className="text-ihub-dark focus:outline-none ml-4"
           >
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
