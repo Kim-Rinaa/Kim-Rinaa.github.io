@@ -21,7 +21,7 @@ const translations = {
     'nav.contact': '문의',
     
     // Hero
-    'hero.slogan': '안전하고 효율적인 화학물질 관리의 선두주자',
+    'hero.slogan': '화학물질 전문 물류센터',
     'hero.cta': 'About us',
     
     // About
@@ -75,7 +75,7 @@ const translations = {
 위험 요소를 선제적으로 대응`,
     
     // Contact
-    'contact.title': '문의하기',
+    'contact.title': '위험물창고 문의하기',
     'contact.address': '주소',
     'contact.phone': '전화',
     'contact.email': '이메일',
@@ -85,7 +85,7 @@ const translations = {
     'contact.form.email': '이메일',
     'contact.form.message': '메시지',
     'contact.form.submit': '문의하기',
-    'contact.address.value': '(336822)충청남도 아산시 영인면 신봉리 170-6',
+    'contact.address.value': '(위험물창고)충청남도 아산시 영인면 신봉리 170-6',
     'contact.phone.value': '+82-10-3397-9023',
     'contact.email.value': 'hs.lee@ihubglobal.co.kr',
     'toast.mailto.title': '메일 작성창이 열렸습니다',
