@@ -74,13 +74,13 @@ const AboutSection: React.FC = () => {
                          xl:w-[700px] xl:h-[550px]" 
             >
               <video 
-                src="/videos/my-slideshow-video.mp4"
+                src="/videos/my-slideshow-video_v2.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
                 className="object-cover w-full h-full" 
-                aria-label="Image slideshow video"
+                aria-label="my-slideshow-video_v2.mp4"
               >
                 Your browser does not support the video tag.
               </video>
